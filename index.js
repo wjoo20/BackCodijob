@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 const PUERTO = process.env.PORT || 3700;
 // use => settea configuraciones de rutas, middlewares, cors, etc.
 app.use('/api', skill_1.router_skill);
-app.use('/api', home_1.router_home);
+app.use('/', home_1.router_home);
 app.use('/api', proyecto_1.router_proyecto);
 app.use('/api', proyectoskill_1.router_proyectoskill);
 app.use('/api', persona_1.router_persona);
